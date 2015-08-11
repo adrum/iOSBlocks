@@ -30,7 +30,7 @@ static UIViewController *_viewController;
 {
     NSUInteger index = [self.viewControllers indexOfObject:self.visibleViewController];
     
-    if (index > 0) {
+    if (index != NSNotFound) {
         
         index--;
         UIViewController *viewController = [self.viewControllers objectAtIndex:index];
@@ -44,7 +44,7 @@ static UIViewController *_viewController;
 {
     NSUInteger index = [self.viewControllers indexOfObject:self.visibleViewController];
     
-    if (index > 0) {
+    if (index != NSNotFound) {
 
         UIViewController *viewController = [self.viewControllers objectAtIndex:0];
         
