@@ -14,7 +14,6 @@ Pod::Spec.new do |s|
 
   # Include UIKit as default spec
   s.default_subspec       = 'Cocoa'
-  s.header_mappings_dir   = 'Source'
 
   s.subspec 'Cocoa' do |cocoas|
     cocoas.public_header_files   = 'Source/*.h', 'Source/**/*.h'
